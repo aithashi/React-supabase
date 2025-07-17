@@ -10,3 +10,20 @@ Supabase connection demo app
  - supabaseClient.js -> Supabase connection configuration
  - supabase.auth.signInWithPassword in Login screen for login with email & password
  - supabase.auth.signUp in Register screen to register with email & password
+
+## Environment Variables Setup
+
+After cloning the repository, create a `.env` file in the project root with the following content:
+
+```
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+You can copy the template from `.env.example`:
+
+```
+cp .env.example .env
+```
+
+Replace the values with your actual Supabase project credentials.
